@@ -15,6 +15,9 @@ const dm_sans = DM_Sans({
 export const metadata: Metadata = {
   title: "MRUHacks.ca",
   description: "Enabling students to dream, design, and develop their future!",
+  // Archived site: keep it reachable but out of search results so it doesn't
+  // compete with the current event at mruhacks.ca.
+  robots: { index: false, follow: true },
 };
 
 export default function RootLayout({
